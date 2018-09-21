@@ -1,0 +1,33 @@
+{
+  "name": "graphql-server-demo",
+  "version": "1.0.0",
+  "description": "GraphQL server demo for Rambler frontend meetup",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GraphQL",
+    "Apollo",
+    "Express"
+  ],
+  "author": "Javed",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "express": "^4.16.3",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0",
+    "merge-graphql-schemas": "^1.5.4",
+    "pg": "^7.4.3",
+    "sequelize": "^4.38.1",
+    "subscriptions-transport-ws": "^0.9.15"
+  }
+}
