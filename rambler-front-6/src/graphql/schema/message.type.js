@@ -11,4 +11,13 @@ export default `
     getMessages: [Message]!
   }
 
+  type Mutation {
+    # Send message, takes username as an argument
+    sendMessage(username: String!, text: String!): Boolean!
+  }
+
+  type Subscription {
+    messageAdded: Message!
+  }
+
 `;
