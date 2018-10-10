@@ -4,6 +4,12 @@ const pubsub = new PubSub();
 const NEW_MESSAGE="messageAdded";
 
 export default {
+    Message: {
+        user: async({userId }, args, { models}) => models.User.findOne({where: { id: userId}}),
+    },
+    Query: {
+        getMessages: async(parent, args, { models }) => models.Message.findAll(),
+    },
     Subscription: {
         messageAdded: {
           subscribe: 

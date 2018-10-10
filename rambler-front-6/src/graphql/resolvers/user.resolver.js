@@ -1,4 +1,7 @@
 export default {
+  Query: {
+    getUser: async(parent, { id }, { models }) => models.User.findOne({ where: { id }}),
+  },
   Mutation:{
     login: async(parent, { username }, { models }) => {
       try {

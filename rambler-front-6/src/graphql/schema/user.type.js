@@ -11,4 +11,8 @@ export default `
     # It logs a unique username in the chatroom and returns a boolean (true or false).
     login(username:String!): Boolean!
   }
+
+  type Query {
+    getUser(id: Int!): User
+  }
 `;
