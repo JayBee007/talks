@@ -2,7 +2,7 @@
 
 ![Rambler front image](https://github.com/JayBee007/talks/raw/master/rambler-front-6/src/rambler-front.png)
 
-![Link to slides](graphql.pdf)
+[Link to slides](graphql.pdf)
 
 ## How to get started
 
